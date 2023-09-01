@@ -37,6 +37,15 @@ nav a {
     text-decoration: none;
     color: #fff;
 }
+/* Estilos para los elementos */
+
+main{
+    color:white
+
+}
+main li {
+    list-style: none;
+}
 
 footer{
     background-color: red;
