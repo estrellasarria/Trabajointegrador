@@ -1,0 +1,12 @@
+
+/* Estilos para el logo */
+.logo {
+    margin-top: 20px; 
+}
+
+.logo img {
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover;
+}
