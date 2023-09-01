@@ -1,4 +1,6 @@
-
+body{
+    background-color: black;
+}
 /* Estilos para el logo */
 .logo {
     margin-top: 20px; 
@@ -9,4 +11,17 @@
     height: 100px; 
     border-radius: 50%; 
     object-fit: cover;
+}
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
 }
