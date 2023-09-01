@@ -1,12 +1,24 @@
 body{
     background-color: black;
 }
+/* Estilos para el header */
+header {
+    background-color:black;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* Estilos para el logo */
 .logo {
     margin-top: 20px; 
 }
 
 .logo img {
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
     width: 100px;
     height: 100px; 
     border-radius: 50%; 
