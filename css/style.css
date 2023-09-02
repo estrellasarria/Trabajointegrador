@@ -37,6 +37,7 @@ nav a {
     text-decoration: none;
     color: #fff;
 }
+
 /* Estilos para los elementos */
 
 main{
@@ -46,6 +47,15 @@ main{
 main li {
     list-style: none;
 }
+
+.seriesPopulares li {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.seriesPopulares li img {
+    max-width: 100%; 
+    height: auto;}
 
 footer{
     background-color: red;
