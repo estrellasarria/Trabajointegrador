@@ -48,14 +48,54 @@ main li {
     list-style: none;
 }
 
-.seriesPopulares li {
+.seriesPopulares ul {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.seriesPopulares li img {
+.seriesPopulares ul img {
     max-width: 100%; 
-    height: auto;}
+    width: 250px;
+    height: 250px;
+    text-align: auto;
+    
+}
+
+.Comedias ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.Comedias ul img {
+    max-width: 100%; 
+    width: 250px;
+    height: 250px;
+    text-align: auto;   
+}
+
+.Tendencias ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.Tendencias ul img {
+    max-width: 100%; 
+    width: 250px;
+    height: 250px;
+    text-align: auto;   
+}
+
+.Comedias ul p {
+    color: red;
+}
+.seriesPopulares ul p {
+    color: red;
+}
+.Tendencias ul p {
+    color: red;
+}
+
+
 
 footer{
     background-color: red;
