@@ -1,6 +1,9 @@
 body{
     background-color: black;
 }
+h3{
+    font-size: 20px;
+}
 /* Estilos para el header */
 header {
     background-color:black;
@@ -99,4 +102,26 @@ main li {
 
 footer{
     background-color: red;
+}
+
+/* Estilos para la página de detalle de película y serie */
+.detalle-pelicula, .detalle-serie {
+    text-align: center;
+    padding: 20px;
+}
+
+.detalle-pelicula img, .detalle-serie img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.detalle-pelicula h2, .detalle-serie h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.detalle-pelicula p, .detalle-serie p {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
