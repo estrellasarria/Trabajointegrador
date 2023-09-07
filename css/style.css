@@ -13,6 +13,17 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.form button{
+    background-color: black;
+    color: white;
+
+
+}
 /* Estilos para el logo */
 .logo {
     margin-top: 20px; 
