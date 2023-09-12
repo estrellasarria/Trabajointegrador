@@ -40,6 +40,9 @@ header {
 }
 nav ul {
     list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
@@ -75,6 +78,11 @@ main li {
     
 }
 
+.seriesPopulares li a {
+    text-decoration: none;
+    color: white;
+}
+
 .Comedias ul {
     display: flex;
     flex-wrap: nowrap;
@@ -87,18 +95,28 @@ main li {
     text-align: auto;   
 }
 
+.Comedias li a{
+    text-decoration: none;
+    color: white;
+}
+
 .Tendencias ul {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+
 }
 .Tendencias ul img {
     max-width: 100%; 
     width: 250px;
     height: 250px;
-    text-align: auto;   
+    text-align: auto;  
 }
 
+.Tendencias li a{
+    text-decoration: none;
+    color: white;
+}
 .Comedias ul p {
     color: red;
 }
@@ -115,14 +133,80 @@ footer{
     background-color: red;
 }
 
-.detalle-serie ul {
+.detallesPelicula li{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.detalle-serie ul img{
+
+.detallesPelicula li img {
     max-width: 100%; 
     width: 250px;
     height: 250px;
     text-align: auto;
+}
+
+.detallesPelicula li a{
+    text-decoration: none;
+    color: black;
+}
+
+.detalleSerie li {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.detalleSerie li img{
+    max-width: 100%; 
+    width: 250px;
+    height: 250px;
+    text-align: auto;
+}
+
+.detalleSerie li a{
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 5px;}
+
+.contenedorGeneros h3{
+    text-align: center;
+}
+
+.contenedorGeneros li a {
+    text-decoration: none;
+    color: black
+}
+
+.listaFav h3 {
+    text-align: center ;
+}
+
+
+.listaFav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.listaFav ul img{
+    max-width: 100%; 
+    width: 250px;
+    height: 250px;
+    text-align: center;  
+}
+
+.listaFav li a{
+    text-decoration: none;
+    color: white;
+}
+.listaFav li p{
+    text-align: center;
 }
