@@ -210,3 +210,17 @@ button {
 .listaFav li p{
     text-align: center;
 }
+
+.generosDetalles ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+.generosDetalles ul img {
+    max-width: 100%; 
+    width: 250px;
+    height: 250px;
+    text-align: auto;
+    
+}
