@@ -222,5 +222,21 @@ button {
     width: 250px;
     height: 250px;
     text-align: auto;
-    
+
+}
+.Search ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.Search ul img{
+    max-width: 100%; 
+    width: 250px;
+    height: 250px;
+    text-align: auto;
+
+}
+.Search ul h3{
+    text-align: left;
+    color: white;
 }
