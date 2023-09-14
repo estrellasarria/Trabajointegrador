@@ -4,6 +4,7 @@ body{
 h3{
     font-size: 20px;
 }
+
 /* Estilos para el header */
 header {
     background-color:black;
@@ -18,12 +19,19 @@ header {
     margin: 0 auto;
     padding: 20px;
 }
-.form button{
-    background-color: black;
+button {
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 5px;}
+
+.form a{
+    text-decoration: none;
     color: white;
-
-
 }
+
 /* Estilos para el logo */
 .logo {
     margin-top: 20px; 
@@ -38,6 +46,8 @@ header {
     border-radius: 50%; 
     object-fit: cover;
 }
+
+/* Estilos para el navegador */
 nav ul {
     list-style: none;
     padding: 0;
@@ -65,6 +75,14 @@ main li {
     list-style: none;
 }
 
+/* Estilos para las series */
+.seriesPopulares h2{
+    background-color: red;
+    color: black;
+}
+.seriesPopulares h3{
+    text-align: center;
+}
 .seriesPopulares ul {
     display: flex;
     flex-wrap: nowrap;
@@ -77,12 +95,19 @@ main li {
     text-align: auto;
     
 }
-
 .seriesPopulares li a {
     text-decoration: none;
     color: white;
 }
 
+/* Estilos para las peliculas */
+.Comedias h2{
+    background-color: red;
+    color: black;
+}
+.Comedias h3{
+    text-align: center;
+}
 .Comedias ul {
     display: flex;
     flex-wrap: nowrap;
@@ -94,12 +119,19 @@ main li {
     height: 250px;
     text-align: auto;   
 }
-
 .Comedias li a{
     text-decoration: none;
     color: white;
 }
 
+/* Estilos para las tendencias*/
+.Tendencias h2{
+    background-color: red;
+    color: black;
+}
+.Tendencias h3{
+    text-align: center;
+}
 .Tendencias ul {
     display: flex;
     flex-wrap: nowrap;
@@ -112,25 +144,34 @@ main li {
     height: 250px;
     text-align: auto;  
 }
-
 .Tendencias li a{
     text-decoration: none;
     color: white;
 }
+
 .Comedias ul p {
     color: red;
+    text-align: center;
 }
 .seriesPopulares ul p {
     color: red;
+    text-align: center;
 
 }
 .Tendencias ul p {
     color: red;
+    text-align: center;
 }
 
-
+/* Estilos para el footer */
 footer{
     background-color: red;
+}
+
+/* Estilos para el detalle de las peliculas */
+.detallesPelicula h2{
+    background-color: red;
+    color: black;
 }
 
 .detallesPelicula li{
@@ -151,6 +192,11 @@ footer{
     color: black;
 }
 
+/* Estilos para el detalle de las series */
+.detalleSerie h2{
+    background-color: red;
+    color: black;
+}
 .detalleSerie li {
     display: flex;
     flex-wrap: nowrap;
@@ -168,29 +214,27 @@ footer{
     color: black;
 }
 
-button {
+/* Estilos para los generos */
+.contenedorGeneros h2{
     background-color: red;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    margin: 5px;}
-
+    color: black;
+}
 .contenedorGeneros h3{
     text-align: center;
 }
-
 .contenedorGeneros li a {
     text-decoration: none;
     color: black
 }
 
+/* Estilos para los favoritos */
+.listaFav h2{
+    background-color: red;
+    color: black;
+}
 .listaFav h3 {
     text-align: center ;
 }
-
-
 .listaFav ul {
     display: flex;
     flex-wrap: nowrap;
@@ -202,7 +246,6 @@ button {
     height: 250px;
     text-align: center;  
 }
-
 .listaFav li a{
     text-decoration: none;
     color: white;
@@ -211,6 +254,7 @@ button {
     text-align: center;
 }
 
+/* Estilos para los detalles de los generos */
 .generosDetalles ul {
     display: flex;
     flex-wrap: nowrap;
@@ -224,6 +268,18 @@ button {
     text-align: auto;
 
 }
+.generosDetalles li{
+    text-align: center;
+}
+.generosDetalles h3{
+    text-align: center;
+}
+.generosDetalles h2{
+    background-color: red;
+    color: black;
+}
+
+/* Estilos para los resultados de busqueda */
 .Search ul{
     display: flex;
     flex-wrap: nowrap;
@@ -236,7 +292,17 @@ button {
     text-align: auto;
 
 }
-.Search ul h3{
-    text-align: left;
-    color: white;
+.Search h3{
+    text-align:center
 }
+.Search h2{
+    text-align: center;
+}
+
+.Search ul a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos Responsive Web Design*/

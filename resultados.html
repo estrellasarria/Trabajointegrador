@@ -8,40 +8,72 @@
 </head>
 <body>
     <header>
-    <h1>Netflix.com</h1>
-    <div class="form">
-        <form action="resultados.html" method="get">
-            <input type="text" name="q" placeholder="Buscador...">
-            <button type="submit">Buscar</button>
-        </form>
-    </div>
+        <h1>Netflix.com</h1>
         <div class="logo">
        <a href="index.html"> <img src="./imagenes/Netflix-Symbol.png" alt="logo de netflix"></a>
         </div>
+         <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="detallePeliculas.html">Comedias</a></li>
+            <li><a href="detalleSeries.html">Series Populares</a></li>
+            <li><a href="generos.html">Generos</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+        </ul>
+        </nav>
+        <div class="form">
+            <form action="resultados.html" method="get">
+                <input type="text" name="q" placeholder="Buscador...">
+                <button type="submit"><a href="resultados.html">Buscar</a></button>
+            </form>
+        </div>
     </header>
 
+<main>
     <div class="Search">
+        <h2>Estos son los resultados de tu busqueda</h2>
         <ul>
             <li>
-                <h3>Terror</h3>
-                <h3>si has buscado peliculas de terror estas son las recomendadas</h4>
-                    <img src="./imagenes/terror/anabelle.jpeg" alt="Anabelle">
+                <a href="detallePeliculas.html">
+                <img src="./imagenes/Netflix posters/dumb and dumber.jpeg" alt="Dumb and Dumber">
+                <h3>Dumb and Dumber</h3>
+                <p>13/07/1995</p>
+                </a>
             </li>
+
             <li>
-                <img src="./imagenes/terror/get out.jpeg" alt="Get Out">
+                <a href="detallePeliculas.html">
+                <img src="./imagenes/Netflix posters/ted.jpeg" alt="Ted">
+                <h3>Ted</h3>
+                <p>06/09/2012</p>
+                </a>
             </li>
-            <li>
-                <img src="./imagenes/terror/Poster-de-Hablame.webp" alt="Hablame">
+
+            <li> 
+                <a href="detalleSeries.html">
+                <img src="./imagenes/breakingbad.jpeg" alt="breaking bad">
+                <h3 class="tituloSeries">Breaking Bad</h3>
+                <p>20/01/2008</p></a>
             </li>
+
             <li>
-                <img src="./imagenes/terror/the prodigy.jpeg" alt="The Prodigy">
+                <a href="detalleSeries.html">
+                <img src="./imagenes/darkserie.jpg" alt="Dark">
+                <h3>Dark</h3>
+                <p>01/12/2017</p></a>
             </li>
+
             <li>
-                <img src="./imagenes/terror/The-Conjuring-Poster-768x1024.jpg" alt="The Conjuring">
+                <a href="detalleSeries.html">
+                <img src="./imagenes/Netflix posters/blacklist.jpeg" alt="blacklist">
+                <h3>The Blacklist</h3>
+                <p>23/09/2013</p></a>
             </li>
         </ul>
-
     </div>
-
+</main>
+<footer>
+    <p>Integrantes del equipo: Estrella Sarria, Augusto Riccobon</p>
+</footer>
 </body>
 </html>
