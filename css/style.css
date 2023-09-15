@@ -71,10 +71,6 @@ main{
     color:white
 
 }
-main li {
-    list-style: none;
-}
-
 /* Estilos para las series */
 .seriesPopulares h2{
     background-color: red;
@@ -83,18 +79,18 @@ main li {
 .seriesPopulares h3{
     text-align: center;
 }
-.seriesPopulares ul {
+.seriesPopulares section {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.seriesPopulares ul img {
+.seriesPopulares section img {
     max-width: 100%; 
     width: 250px;
     height: 250px;
     text-align: auto;    
 }
-.seriesPopulares li a {
+.seriesPopulares article a {
     text-decoration: none;
     color: white;
 }
@@ -107,18 +103,18 @@ main li {
 .Comedias h3{
     text-align: center;
 }
-.Comedias ul {
+.Comedias section {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.Comedias ul img {
+.Comedias section img {
     max-width: 100%; 
     width: 250px;
     height: 250px;
     text-align: auto;   
 }
-.Comedias li a{
+.Comedias article a{
     text-decoration: none;
     color: white;
 }
@@ -131,33 +127,33 @@ main li {
 .Tendencias h3{
     text-align: center;
 }
-.Tendencias ul {
+.Tendencias section {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 
 }
-.Tendencias ul img {
+.Tendencias section img {
     max-width: 100%; 
     width: 250px;
     height: 250px;
     text-align: auto;  
 }
-.Tendencias li a{
+.Tendencias article a{
     text-decoration: none;
     color: white;
 }
 
-.Comedias ul p {
+.Comedias section p {
     color: red;
     text-align: center;
 }
-.seriesPopulares ul p {
+.seriesPopulares section p {
     color: red;
     text-align: center;
 
 }
-.Tendencias ul p {
+.Tendencias section p {
     color: red;
     text-align: center;
 }
@@ -167,28 +163,36 @@ footer{
     background-color: red;
 }
 
-/* Estilos para el detalle de las peliculas */
+/* Estilos para el detalle de las Peliculas */
 .detallesPelicula h2{
     background-color: red;
     color: black;
 }
 
-.detallesPelicula li{
+.detallesPelicula article{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
 
-.detallesPelicula li img {
+.detallesPelicula article img {
     max-width: 100%; 
     width: 250px;
     height: 250px;
     text-align: auto;
 }
 
-.detallesPelicula li a{
+.detallesPelicula article a{
     text-decoration: none;
     color: black;
+}
+
+.detallesPelicula section article p{
+    max-width: 100%; 
+    width: 250px;
+    height: 250px;
+    text-align: auto;
+
 }
 
 /* Estilos para el detalle de las series */
@@ -196,23 +200,23 @@ footer{
     background-color: red;
     color: black;
 }
-.detalleSerie li {
+.detalleSerie article {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.detalleSerie li img{
+.detalleSerie article img{
     max-width: 100%; 
     width: 250px;
     height: 250px;
     text-align: auto;
 }
 
-.detalleSerie li a{
+.detalleSerie article a{
     text-decoration: none;
     color: black;
 }
-.detalleSerie ul li p{
+.detalleSerie section article p{
     text-align: auto;
     max-width: 100%; 
     width: 250px;
@@ -228,7 +232,7 @@ footer{
 .contenedorGeneros h3{
     text-align: center;
 }
-.contenedorGeneros li a {
+.contenedorGeneros article a {
     text-decoration: none;
     color: black
 }
@@ -241,40 +245,40 @@ footer{
 .listaFav h3 {
     text-align: center ;
 }
-.listaFav ul {
+.listaFav section {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.listaFav ul img{
+.listaFav section img{
     max-width: 100%; 
     width: 250px;
     height: 250px;
     text-align: center;  
 }
-.listaFav li a{
+.listaFav article a{
     text-decoration: none;
     color: white;
 }
-.listaFav li p{
+.listaFav article p{
     text-align: center;
 }
 
 /* Estilos para los detalles de los generos */
-.generosDetalles ul {
+.generosDetalles section {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 
 }
-.generosDetalles ul img {
+.generosDetalles section img {
     max-width: 100%; 
     width: 250px;
     height: 250px;
     text-align: auto;
 
 }
-.generosDetalles li{
+.generosDetalles article{
     text-align: center;
 }
 .generosDetalles h3{
@@ -285,13 +289,13 @@ footer{
     color: black;
 }
 
-/* Estilos para los resultados de busqueda */
-.Search ul{
+/* Estilos para los ressectiontados de busqueda */
+.Search section{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.Search ul img{
+.Search section img{
     max-width: 100%; 
     width: 250px;
     height: 250px;
@@ -305,7 +309,7 @@ footer{
     text-align: center;
 }
 
-.Search ul a{
+.Search section a{
     text-decoration: none;
     color: white;
     text-align: center;
