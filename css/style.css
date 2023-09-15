@@ -92,8 +92,7 @@ main li {
     max-width: 100%; 
     width: 250px;
     height: 250px;
-    text-align: auto;
-    
+    text-align: auto;    
 }
 .seriesPopulares li a {
     text-decoration: none;
@@ -304,5 +303,15 @@ footer{
     color: white;
     text-align: center;
 }
+
+header, main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  
 
 /* Estilos Responsive Web Design*/
