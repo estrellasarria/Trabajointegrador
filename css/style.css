@@ -68,7 +68,7 @@ nav a {
 /* Estilos para los elementos */
 
 main{
-    color:white
+    color: white;
 
 }
 /* Estilos para las series */
@@ -81,14 +81,16 @@ main{
 }
 .seriesPopulares section {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 }
 .seriesPopulares section img {
     max-width: 100%; 
-    width: 250px;
-    height: 250px;
-    text-align: auto;    
+    width: 200px;
+    height: 200px;
+    text-align: auto; 
+     
 }
 .seriesPopulares article a {
     text-decoration: none;
@@ -105,13 +107,14 @@ main{
 }
 .Comedias section {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 }
 .Comedias section img {
     max-width: 100%; 
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     text-align: auto;   
 }
 .Comedias article a{
@@ -129,14 +132,15 @@ main{
 }
 .Tendencias section {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 
 }
 .Tendencias section img {
     max-width: 100%; 
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     text-align: auto;  
 }
 .Tendencias article a{
@@ -169,60 +173,50 @@ footer{
     color: black;
 }
 
-.detallesPelicula article{
+.detallesPelicula section{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
-.detallesPelicula article img {
+.detallesPelicula section img {
     max-width: 100%; 
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     text-align: auto;
 }
 
-.detallesPelicula article a{
+.detallesPelicula section a{
     text-decoration: none;
     color: black;
 }
 
-.detallesPelicula section article p{
-    max-width: 100%; 
-    width: 250px;
-    height: 250px;
-    text-align: auto;
 
-}
 
 /* Estilos para el detalle de las series */
 .detalleSerie h2{
     background-color: red;
     color: black;
 }
-.detalleSerie article {
+.detalleSerie section {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
+    
 }
-.detalleSerie article img{
+
+.detalleSerie section img{
     max-width: 100%; 
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     text-align: auto;
 }
 
-.detalleSerie article a{
+.detalleSerie section a{
     text-decoration: none;
     color: black;
 }
-.detalleSerie section article p{
-    text-align: auto;
-    max-width: 100%; 
-    width: 250px;
-    height: 250px;
-    text-align: auto;
-}
+
 
 /* Estilos para los generos */
 .contenedorGeneros h2{
@@ -247,13 +241,14 @@ footer{
 }
 .listaFav section {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 }
 .listaFav section img{
     max-width: 100%; 
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     text-align: center;  
 }
 .listaFav article a{
@@ -267,14 +262,15 @@ footer{
 /* Estilos para los detalles de los generos */
 .generosDetalles section {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 
 }
 .generosDetalles section img {
     max-width: 100%; 
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     text-align: auto;
 
 }
@@ -289,16 +285,17 @@ footer{
     color: black;
 }
 
-/* Estilos para los ressectiontados de busqueda */
+/* Estilos para los resultados de busqueda */
 .Search section{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 }
 .Search section img{
     max-width: 100%; 
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     text-align: auto;
 
 }
@@ -306,7 +303,8 @@ footer{
     text-align:center
 }
 .Search h2{
-    text-align: center;
+    color: black;
+    background-color: red;
 }
 
 .Search section a{
@@ -323,6 +321,149 @@ header, main {
     box-sizing: border-box;
   }
   
-  
 
 /* Estilos Responsive Web Design*/
+@media (max-width:420px){
+    header{
+        flex-direction: column;
+    }
+
+    .Comedias section img{
+        max-width: 100%;
+        height: auto;
+        
+    }
+    .Comedias h3{
+        font-size: small;
+    }
+    .Comedias section p{
+        font-size: small;
+    }
+    .Tendencias section img{
+        max-width: 100%;
+        height: auto;
+    }
+    .Tendencias h3{
+        font-size: small;
+    }
+    .Tendencias section p{
+        font-size: small;
+    }
+    .seriesPopulares section img{
+        max-width: 100%;
+        height: auto;
+        
+    }
+    .seriesPopulares h3{
+        font-size: small;
+    }
+    .seriesPopulares section p{
+        font-size: small;
+    }
+    .generosDetalles section img{
+        max-width: 100%;
+        height: auto;
+    }
+    .generosDetalles h3{
+        font-size: small;
+    }
+    .generosDetalles section p{
+        font-size: small;
+    }
+
+    .listaFav section img{
+        max-width: 100%;
+        height: auto;
+    }
+    .listaFav h3{
+        font-size: small;
+    }
+    .listaFav article p{
+        font-size: small;
+    }
+
+    .Search section img{
+        max-width: 100%;
+        height: auto;
+    }
+    .Search h3{
+        font-size: small;
+    }
+    .Search article a{
+        font-size: small;
+    }
+  
+}
+@media (max-width: 768px){
+    
+        header{
+            flex-direction: column;
+        }
+    
+        .Comedias section img{
+            max-width: 100%;
+            height: auto;
+            
+        }
+        .Comedias h3{
+            font-size: medium;
+        }
+        .Comedias section p{
+            font-size: medium;
+        }
+        .Tendencias section img{
+            max-width: 100%;
+            height: auto;
+        }
+        .Tendencias h3{
+            font-size: medium;
+        }
+        .Tendencias section p{
+            font-size: medium;
+        }
+        .seriesPopulares section img{
+            max-width: 100%;
+            height: auto;
+            
+        }
+        .seriesPopulares h3{
+            font-size: medium;
+        }
+        .seriesPopulares section p{
+            font-size: medium;
+        }
+        .generosDetalles section img{
+            max-width: 100%;
+            height: auto;
+        }
+        .generosDetalles h3{
+            font-size: medium;
+        }
+        .generosDetalles section p{
+            font-size: medium;
+        }
+    
+        .listaFav section img{
+            max-width: 100%;
+            height: auto;
+        }
+        .listaFav h3{
+            font-size: medium;
+        }
+        .listaFav article p{
+            font-size: medium;
+        }
+    
+        .Search section img{
+            max-width: 100%;
+            height: auto;
+        }
+        .Search h3{
+            font-size: medium;
+        }
+        .Search article a{
+            font-size: medium;
+        }
+     
+    
+}
