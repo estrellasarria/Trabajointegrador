@@ -167,6 +167,14 @@ footer{
     background-color: red;
 }
 
+footer img {
+    max-width: 9%;
+    
+}
+footer p {
+    display: flex;
+    justify-content: center;}
+
 /* Estilos para el detalle de las Peliculas */
 .detallesPelicula h2{
     background-color: red;
