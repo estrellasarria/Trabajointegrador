@@ -2,28 +2,30 @@
 
 let url="https://api.themoviedb.org/3/movie/popular?api_key=${43c74b59045ed8eefa36be7448cda7ac}"
 
-let sectionHome= document.querySelector('.sectionHome');
-let homeSection=" "
-
 fetch(url)
-    .then(function(res){
-        return res.json()
-    })
-    .then(function(data){
-        console.log(data);
+.then(function(response){
+    return response.json()
+})
+.then(function(data){
+    console.log(data);
+    let popoularMovies= data.results;
+    let popolarMoviesContainer= document.querySelector(".sectionHome")
+    for (let i=0; i< popoularMovies.length; i++){
+        let movie= popoularMovies[i]
+        let title= movie.title
+        let releaseDate= movie.release_date;
+        let posterPath= movie.poster_Path;
 
-        for (let i=o; i< data.results.length; i ++)
-        { let character= data.results[i];
-            let characterCard= ` <article> class="characterCard"
-            <h2>${character.title}</h2>
-            <img src="${character.image}">
-            <p>${character.name}</p>
-            </article>`;
-            homeSection+=characterCard
-
-        }
-        sectionHome.innerHTML= homeSection;
-    })
-    .catch(function(e){
-        console.log("error "+ e);
-    })
+        let movieCard= `<article>
+        <a href"detallePeliculas.html">
+        <img src="https://image.tmdb.org/t/p/w342${posterPath}">
+        <h2>${title}</h2>
+        <p>${releaseDate}</p>
+        </a>
+        </article>`;
+        popolarMoviesContainer.innerHTML += movieCard
+    }
+})
+.catch(function(e){
+    console.log("error "+ e)
+})
