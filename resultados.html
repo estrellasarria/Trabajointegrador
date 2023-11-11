@@ -32,50 +32,17 @@
 <main>
     <div class="Search">
         <h2>Resultados</h2>
-        <h3>Estos son los resultados de tu busqueda</h3>
-       <section>
-            <article>
-                <a href="detallePeliculas.html">
-                <img src="./imagenes/Netflix posters/dumb and dumber.jpeg" alt="Dumb and Dumber">
-                <h3>Dumb and Dumber</h3>
-                <p>13/07/1995</p>
-                </a>
-            </article>
-
-            <article>
-                <a href="detallePeliculas.html">
-                <img src="./imagenes/Netflix posters/ted.jpeg" alt="Ted">
-                <h3>Ted</h3>
-                <p>06/09/2012</p>
-                </a>
-            </article>
-
-            <article> 
-                <a href="detalleSeries.html">
-                <img src="./imagenes/breakingbad.jpeg" alt="breaking bad">
-                <h3 class="tituloSeries">Breaking Bad</h3>
-                <p>20/01/2008</p></a>
-            </article>
-
-            <article>
-                <a href="detalleSeries.html">
-                <img src="./imagenes/darkserie.jpg" alt="Dark">
-                <h3>Dark</h3>
-                <p>01/12/2017</p></a>
-            </article>
-
-            <article>
-                <a href="detalleSeries.html">
-                <img src="./imagenes/Netflix posters/blacklist.jpeg" alt="blacklist">
-                <h3>The Blacklist</h3>
-                <p>23/09/2013</p></a>
-           </article>
+        <h3 id="textoBusqueda">Estos son los resultados de tu busqueda para: <span id="'searchTerm"></span></h3>
+       <section id="resultadoLista">
+           
         </section>
+        <p id="noResultados" style="display:none;">No hay resultados para tu busqueda</p>
     </div>
 </main>
+<script src="./js/resultados.js"></script>
+</body>
 <footer>
     <img src="./imagenes/logoTmdb.svg" alt="logo TMDB">
         <p>Integrantes del equipo: Estrella Sarria, Augusto Riccobon</p>
     </footer>
-</body>
 </html>

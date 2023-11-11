@@ -23,8 +23,12 @@
         </nav>
         <div class="form">
             <form action="resultados.html" method="get">
-                <input type="text" name="q" placeholder="Buscador...">
-                <button type="submit"><a href="resultados.html">Buscar</a></button>
+                <input  id="searchInput" type="text" name="q" placeholder="Buscador...">
+                <select id="contentType" name="contentType">
+                    <option value="movie">Películas</option>
+                    <option value="tv">Series</option>
+                </select>
+                <button type="submit">Buscar</button>
             </form>
         </div>
     </header>
