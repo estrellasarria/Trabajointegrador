@@ -1,4 +1,4 @@
-// VINCULAR API PARA OBTENER DETALLES DE SERIES
+// VINCULAR API PARA OBTENER DETALLES DE PELICULAS
 
 let apiKey="43c74b59045ed8eefa36be7448cda7ac"
 let detallesCointainer= document.querySelector('#detallesContainer')
