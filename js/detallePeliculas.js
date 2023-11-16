@@ -29,7 +29,8 @@ fetch(detallesPeliculasEndpoint)
         <p>Fecha de Estreno: ${releaseDate}</p>
         <p>Calificación: ${rating}</p>
         <p>Sinopsis: ${overview}</p>
-        <a href="detallePeliculas.html?movie_id=${movieId}"><button>Ver Detalles</button></a><button class="agregar-favorito"><a href="favoritos.html">Agregar a Favoritos</a></button></article>`;
+        <a href="detallePeliculas.html?movie_id=${movieId}"><button>Ver Detalles</button></a><button class="agregar-favorito"><a href="favoritos.html">Agregar a Favoritos</a></button>
+        </article>`;
     }
     detallesCointainer.innerHTML= detallesHtml
 

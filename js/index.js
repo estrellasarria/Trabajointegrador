@@ -17,13 +17,13 @@ fetch(urlPopularMovies)
         let releaseDate= movie.release_date;
         let posterPath= movie.poster_path;
 
-        let movieCard= `<article>
+        let movieCard= `<section>
         <a href"detallePeliculas.html">
         <img src="https://image.tmdb.org/t/p/w342${posterPath}">
         <h2>${title}</h2>
         <p>${releaseDate}</p>
         </a>
-        </article>`;
+        </section>`;
         popolarMoviesContainer.innerHTML += movieCard
     }
 })
@@ -47,13 +47,13 @@ fetch(urlTopRated)
         let releaseDate= movie.release_date;
         let posterPath= movie.poster_path;
 
-        let movieCard= `<article>
+        let movieCard= `<section>
         <a href"detallePeliculas.html">
         <img src="https://image.tmdb.org/t/p/w342${posterPath}">
         <h2>${title}</h2>
         <p>${releaseDate}</p>
         </a>
-        </article>`;
+        </section>`;
         popolarMoviesContainer.innerHTML += movieCard
     }
 })
@@ -77,13 +77,13 @@ fetch(urlProximamente)
         let releaseDate= movie.release_date;
         let posterPath= movie.poster_path;
 
-        let movieCard= `<article>
+        let movieCard= `<section>
         <a href"detallePeliculas.html">
         <img src="https://image.tmdb.org/t/p/w342${posterPath}">
         <h2>${title}</h2>
         <p>${releaseDate}</p>
         </a>
-        </article>`;
+        </section>`;
         popolarMoviesContainer.innerHTML += movieCard
     }
 })
