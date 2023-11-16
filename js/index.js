@@ -111,3 +111,5 @@ searchForm.addEventListener('submit', function(e){
     }
 
 });
+
+//Al hacer click sobre cualquiera de los elementos debe redirigir a la página de detalle 

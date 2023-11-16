@@ -69,3 +69,5 @@ fetch(recomendacionesEndpoint)
 .catch(function(e){
     console.log('el error es '+ e)
 })
+
+//Género al que pertenece. Si tiene más de un género deben mostrarse todos. Cada género debe linkear al detalle de género que corresponda

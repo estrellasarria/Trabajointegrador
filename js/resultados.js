@@ -56,3 +56,5 @@ fetch(urlSeries)
 })
 .then(mostrarResultados)
 .catch(manejarError)
+
+//lista de resultados que coincidan con el término buscado. Al clickear en cualquiera de los resultados deberá redirigir a su detalle 
