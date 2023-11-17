@@ -305,6 +305,17 @@ footer p {
     color: black;
 }
 
+.generosDetalles a{
+    text-decoration: none;
+}
+
+.generosDetalles section h3{
+    max-width: 200px;
+    background-color: red;
+    color: black;
+    text-decoration: none;
+}
+
 /* Estilos para los resultados de busqueda */
 .Search section{
     display: flex;
@@ -343,6 +354,8 @@ header, main {
   
   .Search section h3{
     max-width: 200px ;
+    background-color: red;
+    color: black;
   }
 
 /* Estilos Responsive Web Design*/

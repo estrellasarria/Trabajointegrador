@@ -8,6 +8,7 @@ let searchItem= item.get("q")
 console.log(searchItem);
 
 let urlMovies= `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchItem}`
+
 let urlSeries=  `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${searchItem}`
 
 let resultadoLista= document.querySelector('#resultadoLista')

@@ -1,43 +1,42 @@
 // VINCULAR API PARA OBTENER DETALLES DE PELICULAS
 
-let apiKey="43c74b59045ed8eefa36be7448cda7ac"
-let detallesCointainer= document.querySelector('#detallesContainer')
+let queryString = window.location.search;
+let params = new URLSearchParams(queryString);
+let movieId = params.get("id");
+console.log(movieId)
+let apiKey = "43c74b59045ed8eefa36be7448cda7ac";
+let peliculasEndpoint = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}`;
 
-let detallesPeliculasEndpoint= `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`
 
-fetch(detallesPeliculasEndpoint)
-.then(function(res){
-    return res.json()
-})
-.then(function(data){
-    console.log(data)
-    let peliculas= data.results
-    let detallesHtml=""
+fetch(peliculasEndpoint)
+.then(function (res) {
+        return res.json();
+    })
+.then(function (data) {
+        console.log(data);
+        let title = pelicula.title;
+        let releaseDate = pelicula.release_date;
+        let rating = pelicula.vote_average;
+        let overview = pelicula.overview;
+        let posterPath = pelicula.poster_path;
+        let detallesContainer = document.querySelector('#detallesContainer');
 
-    for (let i=0; i< peliculas.length; i++){
-        let pelicula= peliculas[i]
-        let movieId= pelicula.id
-        let title= pelicula.title
-        let releaseDate= pelicula.release_date
-        let rating= pelicula.vote_average
-        let overview= pelicula.overview
-        let posterPath= pelicula.poster_path
+        detallesContainer.innerHTML+= `
+            <article>
+                <img src="https://image.tmdb.org/t/p/w342${posterPath}">
+                <h3>${title}</h3>
+                <p>${releaseDate}</p>
+                <p>Calificación: ${rating}</p>
+                <p>Sinopsis: ${overview}</p>
+                <button class="agregar-favorito"><a href="favoritos.html">Agregar a Favoritos</a></button>
+            </article>`;
 
-        detallesHtml+= `<article>
-       <img src="https://image.tmdb.org/t/p/w342${posterPath}" alt="${title}">
-        <h3>${title}</h3>
-        <p>Fecha de Estreno: ${releaseDate}</p>
-        <p>Calificación: ${rating}</p>
-        <p>Sinopsis: ${overview}</p>
-        <a href="detallePeliculas.html?movie_id=${movieId}"><button>Ver Detalles</button></a><button class="agregar-favorito"><a href="favoritos.html">Agregar a Favoritos</a></button>
-        </article>`;
-    }
-    detallesCointainer.innerHTML= detallesHtml
+       
+    })
+.catch(function (e) {
+        console.error("Error: " + e);
+    });
 
-})
-.catch(function(error){
-    console.log('error es '+ error)
-})
 
 //VINCULAR API PARA RECOMENDACIONES
 

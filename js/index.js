@@ -16,9 +16,12 @@ fetch(urlPopularMovies)
         let title= movie.title
         let releaseDate= movie.release_date;
         let posterPath= movie.poster_path;
+        let movieId= movie.id
+        console.log(movieId)
+
 
         let movieCard= `<section>
-        <a href"detallePeliculas.html">
+        <a href"detallePeliculas.html?id=${movieId}">
         <img src="https://image.tmdb.org/t/p/w342${posterPath}">
         <h2>${title}</h2>
         <p>${releaseDate}</p>
@@ -46,9 +49,13 @@ fetch(urlTopRated)
         let title= movie.title
         let releaseDate= movie.release_date;
         let posterPath= movie.poster_path;
+        let movieId= movie.id
+        console.log(movieId)
+
+
 
         let movieCard= `<section>
-        <a href"detallePeliculas.html">
+        <a href"detallePeliculas.html?id=${movieId}">        
         <img src="https://image.tmdb.org/t/p/w342${posterPath}">
         <h2>${title}</h2>
         <p>${releaseDate}</p>
@@ -76,9 +83,11 @@ fetch(urlProximamente)
         let title= movie.title
         let releaseDate= movie.release_date;
         let posterPath= movie.poster_path;
+        let movieId= movie.id
+        console.log(movieId)
 
         let movieCard= `<section>
-        <a href"detallePeliculas.html">
+        <a href"detallePeliculas.html?id=${movieId}">
         <img src="https://image.tmdb.org/t/p/w342${posterPath}">
         <h2>${title}</h2>
         <p>${releaseDate}</p>
