@@ -4,16 +4,17 @@ let queryString = window.location.search;
 let params = new URLSearchParams(queryString);
 let movieId = params.get("id");
 console.log(movieId)
+
 let apiKey = "43c74b59045ed8eefa36be7448cda7ac";
 let peliculasEndpoint = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}`;
-
-
+console.log(peliculasEndpoint)
 fetch(peliculasEndpoint)
 .then(function (res) {
         return res.json();
     })
-.then(function (data) {
-        console.log(data);
+.then(function (pelicula) {
+        console.log(pelicula)
+
         let title = pelicula.title;
         let releaseDate = pelicula.release_date;
         let rating = pelicula.vote_average;
@@ -21,8 +22,7 @@ fetch(peliculasEndpoint)
         let posterPath = pelicula.poster_path;
         let detallesContainer = document.querySelector('#detallesContainer');
 
-        detallesContainer.innerHTML+= `
-            <article>
+        detallesContainer.innerHTML+=`<h2>Conoce los detalles de: ${title}</h2><article>
                 <img src="https://image.tmdb.org/t/p/w342${posterPath}">
                 <h3>${title}</h3>
                 <p>${releaseDate}</p>
@@ -31,7 +31,6 @@ fetch(peliculasEndpoint)
                 <button class="agregar-favorito"><a href="favoritos.html">Agregar a Favoritos</a></button>
             </article>`;
 
-       
     })
 .catch(function (e) {
         console.error("Error: " + e);
@@ -40,7 +39,7 @@ fetch(peliculasEndpoint)
 
 //VINCULAR API PARA RECOMENDACIONES
 
-let recomendacionesEndpoint=`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`
+let recomendacionesEndpoint=`https://api.themoviedb.org/3/movie/${movieId}/recommendations?api_key=${apiKey}`;
 let recomendacionesContainer= document.querySelector('#recomendacionesCointainer')
 
 fetch(recomendacionesEndpoint)
@@ -68,4 +67,3 @@ fetch(recomendacionesEndpoint)
     console.log('el error es '+ e)
 })
 
-//Género al que pertenece. Si tiene más de un género deben mostrarse todos. Cada género debe linkear al detalle de género que corresponda

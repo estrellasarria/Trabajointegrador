@@ -44,7 +44,7 @@ fetch(moviesEndpoint)
             let movie= moviesData.results[i]
             let movieTitle= moviesData.results[i].title
             let movieHtml= `<article>
-            <a href="#">
+            <a href="detallePeliculas.html?id=${movie.id}">
             <img src="https://image.tmdb.org/t/p/w342${movie.poster_path}">
             <h3>${movieTitle}</h3>
             </a>
