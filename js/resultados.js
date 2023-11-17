@@ -1,3 +1,5 @@
+//VINCULAR API AL FORMULARIO DE BUSQUEDA
+
 apiKey="43c74b59045ed8eefa36be7448cda7ac"
 let queryString= location.search
 let item= new URLSearchParams(queryString)
@@ -6,10 +8,8 @@ let searchItem= item.get("q")
 console.log(searchItem);
 
 let urlMovies= `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchItem}`
-
 let urlSeries=  `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${searchItem}`
 
-let mainContainer= document.querySelector('#mainSearch')
 let resultadoLista= document.querySelector('#resultadoLista')
 let textoBusqueda= document.querySelector('#textoBusqueda')
 let noResultados= document.querySelector('#noResultados')
@@ -21,7 +21,7 @@ function crearResultados(movies){
     return `
     <article>
     <a>
-        <img src="https://image.tmdb.org/t/p/w342${movies.poster_path}" alt="${movies.title || movies.name}">
+        <img src="https://image.tmdb.org/t/p/w342${movies.poster_path}" alt="${movies.title}">
         <h3>${movies.title || movies.name}</h3>
         <p>${movies.release_date || movies.first_air_date}</p>
     </a>

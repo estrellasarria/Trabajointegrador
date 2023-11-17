@@ -91,25 +91,5 @@ fetch(urlProximamente)
     console.log("error "+ e)
 })
 
-//INTEGRAR LA API PARA EL FORUMARIO DE BUSQUEDA
-
-let searchForm= document.querySelector('.form')
-let searchInput= document.querySelector('#searchInput')
-
-searchForm.addEventListener('submit', function(e){
-    e.preventDefault();
-    let searchTerm= searchInput.value.trim();
-    let contentType= document.querySelector('#contentType')
-    if (searchTerm){
-        if (contentType === 'movie'){
-            let endpointMovies = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchTerm}`;
-        } else if (contentType === 'tv'){
-             let endpointSeries = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${searchTerm}`;
-        }
-        window.location.href = `resultados.html?q=${searchTerm}`;
-
-    }
-
-});
 
 //Al hacer click sobre cualquiera de los elementos debe redirigir a la página de detalle 
