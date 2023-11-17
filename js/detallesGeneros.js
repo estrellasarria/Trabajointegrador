@@ -12,8 +12,7 @@ console.log(genreId)
 
 apiKey="43c74b59045ed8eefa36be7448cda7ac"
 let genreEndpoint=`https://api.themoviedb.org/3/genre/` + genreId+ `?api_key=${apiKey}`
-let moviesEndpoint= `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`
-let seriesEndpoint= `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}`
+let moviesEndpoint= `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genreId}`
 
 fetch(genreEndpoint)
 .then(function(res){
@@ -24,7 +23,7 @@ fetch(genreEndpoint)
 
     if(data.name){
         document.querySelector('#nombreGenero').innerHTML= "Conoce lo mas buscado en: " + data.name
-    } else{ document.querySelector('#nombreGenero').innerHTML= "Genero no encontrado" }
+    }
 })
 .catch(function(e){
     console.log('el error es: ' + e)
@@ -39,15 +38,15 @@ fetch(moviesEndpoint)
 
     let generosDetails= document.querySelector('#generosDetails')
     if (moviesData.results && moviesData.results.length >0){
+        generosDetails.innerHTM=""
+
         for (let i = 0 ; i < moviesData.results.length; i++){
             let movie= moviesData.results[i]
             let movieTitle= moviesData.results[i].title
-            let movieOverview= moviesData.results[i].overview
             let movieHtml= `<article>
             <a href="#">
             <img src="https://image.tmdb.org/t/p/w342${movie.poster_path}">
             <h3>${movieTitle}</h3>
-            <p>${movieOverview}</p>
             </a>
             </article>`;
 

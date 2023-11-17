@@ -1,2 +1,2 @@
-
+//La posibilidad de agregar películas o series a “favoritos”. Cada equipo decidirá si agregar series, películas, o ambas. Si el contenido ya se encuentra seleccionado como favorito el usuario deben tener la posibilidad de quitarlo de favoritos. La información de los favoritos seleccionados debe guardarse en localstorage. El dato a guardar debe ser el id de la película, de la serie o ambos si así lo eligieron.
 
