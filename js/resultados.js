@@ -21,13 +21,12 @@ searchTerm.innerHTML+= searchItem
 function crearResultados(movies){
     return `
     <article>
-    <a>
+    <a href="#">
         <img src="https://image.tmdb.org/t/p/w342${movies.poster_path}" alt="${movies.title}">
         <h3>${movies.title || movies.name}</h3>
         <p>${movies.release_date || movies.first_air_date}</p>
     </a>
-</article>
-    `
+</article>`
 }
 
 function mostrarResultados(data){

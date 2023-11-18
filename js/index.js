@@ -33,32 +33,33 @@ fetch(urlPopularMovies)
     console.log("error "+ e)
 })
 
-let urlTopRated= `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`
+let tvPopular= `https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}`
+console.log(tvPopular)
 
-fetch(urlTopRated)
+fetch(tvPopular)
 .then(function(response){
     return response.json()
 })
 .then(function(data){
     console.log(data);
-    let popoularMovies= data.results.slice(0,5);
-    let popolarMoviesContainer= document.querySelector(".sectionTopRated")
-    for (let i=0; i< popoularMovies.length; i++){
-        let movie= popoularMovies[i]
-        let title= movie.title
-        let releaseDate= movie.release_date;
-        let posterPath= movie.poster_path;
-        let movieId= movie.id
-        console.log(movieId)
+    let tvSeries= data.results.slice(0,5);
+    let tvSeriesContainer= document.querySelector(".sectionSeries")
+    for (let i=0; i< tvSeries.length; i++){
+        let serie= tvSeries[i]
+        let title= serie.name
+        let aire= serie.first_air_date;
+        let posterPath= serie.poster_path;
+        let serieId= serie.id
+        console.log(serieId)
 
-        let movieCard= `<section>
-        <a href="detallePeliculas.html?id=${movieId}">
+        let serieCard= `<section>
+        <a href="detalleSeries.html?id=${serieId}">
         <img src="https://image.tmdb.org/t/p/w342${posterPath}">
         <h2>${title}</h2>
-        <p>${releaseDate}</p>
+        <p>${aire}</p>
         </a>
         </section>`;
-        popolarMoviesContainer.innerHTML += movieCard
+       tvSeriesContainer.innerHTML += serieCard
     }
 })
 .catch(function(e){

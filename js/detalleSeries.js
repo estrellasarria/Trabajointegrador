@@ -7,7 +7,6 @@ console.log(seriesId);
 
 let apiKey = "43c74b59045ed8eefa36be7448cda7ac"; 
 let seriesEndpoint = `https://api.themoviedb.org/3/tv/${seriesId}?api_key=${apiKey}`;
-
 console.log(seriesEndpoint);
 
 fetch(seriesEndpoint)
@@ -32,7 +31,7 @@ fetch(seriesEndpoint)
                 <p>Sinopsis: ${overview}</p>
                 <button class="agregar-favorito"><a href="favoritos.html">Agregar a Favoritos</a></button>
             </article>`;
-
+           
   })
   .catch(function (e) {
     console.error("Error: " + e);

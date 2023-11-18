@@ -24,3 +24,4 @@ fetch(endpointGenerosPelis)
     console.log('error'+ e)
 })
 
+//VINCULAR API EN LA SECCION DE GENEROS DE PELICULAS
