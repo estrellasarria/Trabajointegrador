@@ -506,16 +506,29 @@ header, main {
 
 /*estilos del index.js para que el titulo de las peliculas no sobresalgan del tamaño de las fotos*/
 
+
 .sectionPelisPopulares section h2{
     max-width: 200px ;
+}
+
+.sectionPelisPopulares a{
+    text-decoration: none;
 }
 
 .sectionTopRated section h2{
     max-width: 200px ;
 }
 
+.sectionTopRated a{
+    text-decoration: none;
+}
+
 .sectionProximamente section h2{
     max-width: 200px ;
+}
+
+.sectionProximamente a{
+    text-decoration: none;
 }
 
 .sectionProximamente section h3{
@@ -530,3 +543,6 @@ header, main {
     max-width: 200px ;
 }
 
+.sectionSeries a{
+    text-decoration: none;
+}
